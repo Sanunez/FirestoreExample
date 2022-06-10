@@ -3,22 +3,23 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/userParentView"
     android:layout_width="match_parent"
-    android:layout_height="125dp"
-    android:padding="5dp">
+    android:layout_height="90dp"
+    android:paddingTop="5dp"
+    android:paddingHorizontal="5dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
 
     <TextView
         android:id="@+id/name"
-        android:text="First Last"
-        android:textSize="24sp"
-        android:textColor="@color/black"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="24sp"/>
 
     <TextView
         android:id="@+id/email"
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
-        android:text="some_email@gmail.com"
         android:textSize="24sp"
         android:textColor="@color/black"
         android:layout_width="wrap_content"
@@ -26,7 +27,6 @@
 
     <TextView
         android:id="@+id/age"
-        android:text="Age:"
         android:textSize="24sp"
         android:textColor="@color/black"
         android:layout_alignParentEnd="true"
@@ -36,12 +36,18 @@
 
     <TextView
         android:id="@+id/gender"
-        android:text="Gender"
         android:textSize="24sp"
         android:textColor="@color/black"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"/>
 
 </RelativeLayout>

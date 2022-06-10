@@ -8,29 +8,29 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:text="No Users Found"
-        android:gravity="center"
+        android:id="@+id/noUsersTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/userScrollView"
         android:layout_alignRight="@id/userScrollView"
         android:layout_alignBottom="@id/userScrollView"
         android:layout_alignParentTop="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:gravity="center"
+        android:text="No Users Found" />
 
     <ScrollView
         android:id="@+id/userScrollView"
         android:layout_width="match_parent"
         android:layout_height="500dp"
-        android:layout_alignParentTop="true"
         android:layout_above="@id/addUserLayout"
+        android:layout_alignParentTop="true"
         android:orientation="vertical">
 
         <LinearLayout
             android:id="@+id/userLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-        </LinearLayout>
+            android:orientation="vertical"></LinearLayout>
 
     </ScrollView>
 
