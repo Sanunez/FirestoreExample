@@ -78,7 +78,9 @@ class MainActivity : AppCompatActivity() {
             "gender" to gender,
             "userId" to id
             )
-        ).addOnFailureListener { Toast.makeText(MainActivity@this, "User Failed to be added", Toast.LENGTH_SHORT).show() }
+        ).addOnFailureListener {
+            Toast.makeText(MainActivity@this, "User Failed to be added", Toast.LENGTH_SHORT).show()
+        }
          .addOnSuccessListener {
             Toast.makeText(MainActivity@this, "User Successfully added", Toast.LENGTH_SHORT).show()
             fetchUsers()
@@ -112,24 +114,28 @@ class MainActivity : AppCompatActivity() {
                 "email" to email,
                 "gender" to gender,
             ) as MutableMap<String, Any>
-        ).addOnFailureListener { Toast.makeText(MainActivity@this, "User Failed to be added", Toast.LENGTH_SHORT).show() }
-            .addOnSuccessListener {
-                Toast.makeText(MainActivity@this, "User Successfully added", Toast.LENGTH_SHORT).show()
-                fetchUsers()
-            }
+        ).addOnFailureListener {
+            Toast.makeText(MainActivity@this, "User Failed to be Updated", Toast.LENGTH_SHORT).show()
+        }
+        .addOnSuccessListener {
+            Toast.makeText(MainActivity@this, "User Successfully Updated", Toast.LENGTH_SHORT).show()
+            fetchUsers()
+        }
     }
 
     fun delete() {
         var userId = users.get(userIndex!!).get("userId").toString()
         db.collection("Users").document(userId).delete()
-            .addOnFailureListener { Toast.makeText(MainActivity@this, "Unable to delete user", Toast.LENGTH_SHORT).show() }
-            .addOnSuccessListener {
-                Toast.makeText(MainActivity@this, "Successfully deleted user", Toast.LENGTH_SHORT).show()
-                users.removeAt(userIndex!!)
-                userIndex = null
-                userView = null
-                fetchUsers()
-            }
+        .addOnFailureListener {
+            Toast.makeText(MainActivity@this, "Unable to delete user", Toast.LENGTH_SHORT).show()
+        }
+        .addOnSuccessListener {
+            Toast.makeText(MainActivity@this, "Successfully deleted user", Toast.LENGTH_SHORT).show()
+            users.removeAt(userIndex!!)
+            userIndex = null
+            userView = null
+            fetchUsers()
+        }
     }
 
     fun clearUI(){
