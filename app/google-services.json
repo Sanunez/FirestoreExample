@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "745258952189",
+    "firebase_url": "https://fixi-7a196-default-rtdb.firebaseio.com",
+    "project_id": "fixi-7a196",
+    "storage_bucket": "fixi-7a196.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:745258952189:android:f20d878d4e577e70026594",
+        "android_client_info": {
+          "package_name": "com.omegaonedevelopers.Fixi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "745258952189-3u2lfnimgnlbdprbou2efgp17cgc2el1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5u1Tlu3nzGrRyO99yCoMeQtZBgzc3pag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "745258952189-3u2lfnimgnlbdprbou2efgp17cgc2el1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "745258952189-0i3726sth5sdir7upe7jiq1i54g696s0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.omegaonedevelopers.Fixi"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:745258952189:android:a6ef2f00552b2cad026594",
+        "android_client_info": {
+          "package_name": "com.omegaonedevelopers.firestoretest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "745258952189-3u2lfnimgnlbdprbou2efgp17cgc2el1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5u1Tlu3nzGrRyO99yCoMeQtZBgzc3pag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "745258952189-3u2lfnimgnlbdprbou2efgp17cgc2el1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "745258952189-0i3726sth5sdir7upe7jiq1i54g696s0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.omegaonedevelopers.Fixi"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
